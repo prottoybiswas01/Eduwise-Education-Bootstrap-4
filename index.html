@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Ecology Theme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduwise - Education HTML5 Template</title>
+    <link rel="shortcut icon" href="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/421247442_408227118441980_4600158855493524465_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGRqloSmXHsLECxNbLgHXqQ2CEfa0NL4HTYIR9rQ0vgdI90UWbwTY0lCS6VLktiQ1qrT8vunMv1C7awy8WDfme0&_nc_ohc=1O6OcY-HTaUQ7kNvgGVj0K-&_nc_ht=scontent.fdac14-1.fna&oh=00_AfAPAyVjesDsi8r7WRjVqC36jnvVM8D_kIh5EkunJYQ76g&oe=663074CD" type="image/x-icon">
+    <!-- Goole Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/assets/bootstrap.min.css">
+    <!-- Font awsome CSS -->
+    <link rel="stylesheet" href="css/assets/font-awesome.min.css">    
+    <link rel="stylesheet" href="css/assets/flaticon.css">
+    <link rel="stylesheet" href="css/assets/magnific-popup.css">    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/assets/owl.theme.css">     
+    <link rel="stylesheet" href="css/assets/animate.css"> 
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="css/assets/slick.css">  
+    <link rel="stylesheet" href="css/assets/preloader.css"/>    
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="css/assets/revolution/layers.css">
+    <link rel="stylesheet" href="css/assets/revolution/navigation.css">
+    <link rel="stylesheet" href="css/assets/revolution/settings.css">    
+    <!-- Mean Menu-->
+    <link rel="stylesheet" href="css/assets/meanmenu.css">
+    <!-- main style-->
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="header_four">
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>    
+    <div class="header_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-12">
+                    <div class="info_wrapper">
+                        <div class="contact_info">                   
+        					<ul class="list-unstyled">
+                                <li><i class="flaticon-phone-receiver"></i>+88019781670</li>
+        						<li><i class="flaticon-mail-black-envelope-symbol"></i>prottoybiswas575358@main.com</li>
+        					</ul>                    
+                        </div>
+                        <div class="login_info">
+                             <ul class="d-flex">
+                                <li class="nav-item"><a href="index01.html" class="#"><i class="flaticon-user-male-black-shape-with-plus-sign"></i>Sign Up</a></li>
+                                <li class="nav-item"><a href="index01.html" class="#"><i class="flaticon-padlock"></i>Lon In</a></li>
+                            </ul>
+                            <a href="https://mangrove.edu.bd/admission-requirements/" title="" class="apply_btn">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="edu_nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-faded">
+                <a class="navbar-brand" href="index-2.html"><img src="data:image/png;base64,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" alt="logo"></a>
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav lavalamp ml-auto menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="http://mangroveerp.com/" class="nav-link">Mangrove ERP</a></li>
+                        <li class="nav-item"><a href="course.html" class="nav-link">Courses</a>
+                            <ul class="navbar-nav nav mx-auto">
+                                <li class="nav-item"><a href="course.html" class="nav-link">Courses</a></li>
+                                <li class="nav-item"><a href="course-details.html" class="nav-link">Courses Details</a></li>
+                            </ul> 
+                        </li>
+                       
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mr-auto search_area ">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><i class="search_btn flaticon-magnifier"></i>
+                            <div id="search">
+                                <button type="button" class="close">×</button>
+                                 <form>
+                                     <input type="search" value="" placeholder="Search here...."  required/>
+                                 </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- END NAVBAR -->
+        </div> 
+    </div>
+
+
+    <!--==================
+        Slider
+    ===================-->
+    <div class="rev_slider_wrapper">
+        <div id="rev_slider_1" class="rev_slider">
+            <ul>
+                <li data-index="rs-1706" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+                    <div class="slider-overlay"></div>
+                    <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+                    <img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/436299064_831412929014183_1254794418981768229_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEUuCZtQFyA68VCRgGEbqnoLJp4yLDhJTEsmnjIsOElMT9BmcdNdZUu6kjHH2eL0eGFCZd3RTUmBXo0hfUaFxIi&_nc_ohc=3Jsdfq46VqsAb6a-kVv&_nc_ht=scontent.fdac14-1.fna&oh=00_AfDztH2tL6lkD1X7i2L_1_Bwe2BMlFLMjijpZwokUaeEnQ&oe=662F38CB" alt="Sky" class="rev-slidebg"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption font-lora sfb tp-resizeme letter-space-5 h-p" 
+                        data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-200','-280','-250','-200']" 
+                        data-fontsize="['20','40','40','28']"
+                        data-lineheight="['70','80','70','70']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":400,"to":"o:1;","delay":100,"split":"chars","splitdelay":0.05,"ease":"Power3.easeInOut"},{"delay":"wait","speed":100,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+
+                        style="z-index: 7; color:#fff; font-family:'Rubik', sans-serif; max-width: auto; max-height: auto; white-space: nowrap; font-weight:500;">The Goal Of Education Is The Advancement Of Knowledge
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption NotGeneric-Title   tp-resizeme" 
+                        id="slide-3045-layer-1" 
+                        data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-140','-140','-120']" 
+                        data-fontsize="['65','120','100','70']"
+                        data-lineheight="['70','120','70','70']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[10,10,10,10]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[10,10,10,10]"
+                        data-paddingleft="[0,0,0,0]"
+
+                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 900; white-space: nowrap;text-transform:left;">Take The First Step To
+                    </div>
+
+                    <!-- LAYER NR.3 -->
+                    <div class="tp-caption NotGeneric-Title   tp-resizeme" 
+                        id="slide-3045-layer-1" 
+                        data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-40','0','-10','-40']" 
+                        data-fontsize="['65','120','100','70']"
+                        data-lineheight="['70','120','70','70']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[10,10,10,10]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[10,10,10,10]"
+                        data-paddingleft="[0,0,0,0]"
+
+                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 900; white-space: nowrap;text-transform:left;">Knowledge With Us.
+                    </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption rev-btn rev-btn left_btn" 
+                        id="slide-2939-layer-8" 
+                        data-x="['left','left','left','left']" data-hoffset="['0','500','420','280']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['75','220','190','100']" 
+                        data-fontsize="['14','14','10','8']"
+                        data-lineheight="['34','34','30','20']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="button" 
+                        data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1750,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#ffffff;bg:#ff5a2c;bw:2px 2px 2px 2px;"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[12,12,8,8]"
+                        data-paddingright="[40,40,30,25]"
+                        data-paddingbottom="[12,12,8,8]"
+                        data-paddingleft="[40,40,30,25]"
+
+                        style="z-index: 14; white-space: nowrap; font-weight: 500; color: #ffffff;font-family:Rubik; text-transform:uppercase; background-color:#ff5a2c; border-color:rgba(0, 0, 0, 1.00); border-width:2px;  border-radius: 3px;">Get Started Now
+                    </div>
+                    <!-- LAYER NR. 5 -->
+                    <div class="tp-caption rev-btn rev-btn right-btn" 
+                        id="slide-2939-layer-8" 
+                        data-x="['left','left','left','left']" data-hoffset="['250','-60','-130','-100']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['75','220','190','100']" 
+                        data-fontsize="['14','14','10','8']"
+                        data-lineheight="['34','34','30','20']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="button" 
+                        data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1750,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#fff;bg:#ff5a2c;bw:2px 2px 2px 2px; "}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[12,12,8,8]"
+                        data-paddingright="[40,40,30,25]"
+                        data-paddingbottom="[12,12,8,8]"
+                        data-paddingleft="[40,40,30,25]"
+
+                        style="z-index: 14; white-space: nowrap;  font-weight:500; color:#ffffff; font-family:Rubik; text-transform:uppercase; background-color:#092ace; letter-spacing:1px; border-radius: 3px;">View Courses
+                    </div>
+                </li>
+
+                <li data-index="rs-1708" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <div class="slider-overlay"></div>
+                    <img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/391629641_716438073845003_8233955059981265576_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE8jegSmwXgVxO9nIha8tq4kxajhV1P36mTFqOFXU_fqdocnzLW8vzG6bUofbvnnfLmCzpaKWRnj9DOsek1nilr&_nc_ohc=3mZCnQvhkJQAb7K1CsJ&_nc_ht=scontent.fdac14-1.fna&oh=00_AfDlpSion8nlWkw5LzmpDfqZlLqK0OxSsRL3aiij9MOp6Q&oe=662F3E0E" alt="Sky" class="rev-slidebg"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption font-lora sfb tp-resizeme letter-space-5 h-p" 
+                        data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-200','-280','-250','-200']" 
+                        data-fontsize="['20','40','40','28']"
+                        data-lineheight="['70','80','70','70']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":400,"to":"o:1;","delay":100,"split":"chars","splitdelay":0.05,"ease":"Power3.easeInOut"},{"delay":"wait","speed":100,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                        
+                        style="z-index: 7; color:#fff; font-family:'Rubik', sans-serif; max-width: auto; max-height: auto; white-space: nowrap; font-weight:500;">The Goal Of Education Is The Advancement Of Knowledge
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption NotGeneric-Title   tp-resizeme" 
+                        id="slide-3045-layer-11" 
+                        data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-120','-140','-140','-120']" 
+                        data-fontsize="['65','120','100','70']"
+                        data-lineheight="['70','120','70','70']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[10,10,10,10]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[10,10,10,10]"
+                        data-paddingleft="[0,0,0,0]"
+
+                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 700; white-space: nowrap;text-transform:left;">Take The First Step To
+                    </div>
+
+                    <!-- LAYER NR.3 -->
+                    <div class="tp-caption NotGeneric-Title   tp-resizeme" 
+                        id="slide-3045-layer-12" 
+                        data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-40','0','-10','-40']" 
+                        data-fontsize="['65','120','100','70']"
+                        data-lineheight="['70','120','70','70']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[10,10,10,10]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[10,10,10,10]"
+                        data-paddingleft="[0,0,0,0]"
+
+                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 700; white-space: nowrap;text-transform:left;">Knowledge With Us.
+                    </div>
+
+                        <!-- LAYER NR. 4 -->
+                    <div class="tp-caption rev-btn rev-btn left_btn" 
+                        id="slide-2939-layer13" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['75','220','190','100']" 
+                        data-fontsize="['14','14','10','8']"
+                        data-lineheight="['34','34','30','20']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="button" 
+                        data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1750,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#ffffff;bg:#ff5a2c;bw:2px 2px 2px 2px;"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[12,12,8,8]"
+                        data-paddingright="[40,40,30,25]"
+                        data-paddingbottom="[12,12,8,8]"
+                        data-paddingleft="[40,40,30,25]"
+
+                        style="z-index: 14; white-space: nowrap; font-weight: 500; color: #ffffff;font-family:Rubik; text-transform:uppercase; background-color:#ff5a2c; border-color:rgba(0, 0, 0, 1.00); border-width:2px;  border-radius: 3px;">Get Started Now
+                    </div>
+                        <!-- LAYER NR. 5 -->
+                    <div class="tp-caption rev-btn rev-btn right-btn" 
+                        id="slide-2939-layer-15" 
+                        data-x="['left','left','left','left']" data-hoffset="['250','-60','-130','-100']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['75','220','190','100']" 
+                        data-fontsize="['14','14','10','8']"
+                        data-lineheight="['34','34','30','20']"
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="button" 
+                        data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-2939","delay":""}]'
+                        data-responsive_offset="on" 
+                        data-responsive="off"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1750,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#fff;bg:#ff5a2c;bw:2px 2px 2px 2px; "}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[12,12,8,8]"
+                        data-paddingright="[40,40,30,25]"
+                        data-paddingbottom="[12,12,8,8]"
+                        data-paddingleft="[40,40,30,25]"
+
+                        style="z-index: 14; white-space: nowrap;  font-weight:500; color:#ffffff; font-family:Rubik; text-transform:uppercase; background-color:#092ace; letter-spacing:1px; border-radius: 3px;">View Courses
+                    </div>
+                </li>
+
+            </ul><!-- END SLIDES LIST -->
+        </div><!-- END SLIDER CONTAINER -->
+    </div><!-- END SLIDER CONTAINER WRAPPER -->
+</header> <!--  End header section-->
+
+
+
+<section class="login_signup_option">
+    <div class="l-modal is-hidden--off-flow js-modal-shopify">
+        <div class="l-modal__shadow js-modal-hide"></div>
+        <div class="login_popup login_modal_body">
+            <div class="Popup_title d-flex justify-content-between">
+                <h2 class="hidden">&nbsp;</h2>
+                <!-- Nav tabs -->
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-lg-12 login_option_btn">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                        <!-- Tab panels -->
+                        <div class="tab-content card">
+                            <!--Login-->
+                            <div class="tab-pane fade in show active" id="login" role="tabpanel">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <input type="email" class="form-control" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Password</label>
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
+                                            <a href="forgot-password.html" title="" class="forget_pass">Forget Password ?</a>
+                                            <button type="submit" class="btn btn-default login_btn">Login</button>
+                                        </div> 
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="social_login">
+                                                <div class="social_items">
+                                                    <button class="google_login google">Login Google</button>
+                                                    <button class="google_login facebook">Login Facebook</button>
+                                                    <button class="google_login twitter">Login Twitter</button>
+                                                    <button class="google_login linkdin">Login Linkdin</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/.Panel 1-->
+                            <!--Panel 2-->
+                            <div class="tab-pane fade" id="panel2" role="tabpanel">
+                                <form action="#" class="register">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label  class="control-label">Name</label>
+                                                <input type="text" class="form-control" placeholder="Username">
+                                            </div>
+                                        </div>                                        
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label  class="control-label">Email</label>
+                                                <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label  class="control-label">Password</label>
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
+                                            <button type="submit" class="btn btn-default login_btn">Register</button>
+                                        </div> 
+                                    </div>
+                                </form>
+                            </div><!--/.Panel 2-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- End Login Signup Option -->
+
+
+
+
+<section class="cources_highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="latest_blog_carousel">
+                     <div class="single_item single_item_first">
+                        <div class="blog-img">
+                            <a href="#"><img src="images/features/features_1.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>look At</span>  
+                            <h3><a href="#" title="">Next Scheduled</a></h3> 
+                            <p>Lorem Ipsum dolor sit amet mollis felis arcu donec viverra. Pede phasellus etiam; Aaecenas vel vici quis dictum rutrum nec nisi et ac penatibus aenean....</p>                    
+                        </div>   
+                    </div>
+
+                    <div class="single_item single_item_center">
+                        <div class="blog-img">
+                            <a href="#" title=""><img src="images/features/features_2.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Go To</span>  
+                            <h3><a href="#" title="">Online Courees</a></h3> 
+                            <p>Lorem Ipsum dolor sit amet mollis felis arcu donec viverra. Pede phasellus etiam; Aaecenas vel vici quis dictum rutrum nec nisi et ac penatibus aenean. Pede enim nunc ultricies quis rhoncus penatibus tincidunt integer felis...</p>                    
+                        </div>   
+                    </div>
+
+                   <div class="single_item single_item_last">
+                        <div class="blog-img">
+                            <a href="#" title=""><img src="images/features/features_3.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Get Your</span>  
+                            <h3><a href="#" title="">Education Equip</a></h3> 
+                             <p>Lorem Ipsum dolor sit amet mollis felis arcu donec viverra. Pede phasellus etiam; Aaecenas vel vici quis dictum rutrum nec nisi et ac penatibus aenean....</p>  
+                        </div>   
+                    </div>
+
+                </div>
+            </div>             
+        </div>
+    </div>
+</section><!-- End Popular Courses Highlight -->
+
+
+<section class="about_top_wrapper">
+    <div class="container">            
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                <div class="title">
+                    <h2>Take The First Step To Learn With Us.</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissio ducimus qui blanditiis praesentium volu ptat umtjk deleniti atque corrupti quos esentium voluptatum delen itamus et iusto odio dignissimos ducimus qui blanditii. </p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">            
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 ml-auto p-0">
+                <div class="banner_learn">
+                    <img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/407975905_744009524421191_4072248632896141849_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGv6u6sQBSFl193TwyPTU-AXgvyrOqSxkheC_Ks6pLGSP-nxo5-6ctiZoNIYRHay6VvwNzoZvP4-2FhZrhZxXKf&_nc_ohc=luJCZmaP004Ab4uV0DJ&_nc_ht=scontent.fdac14-1.fna&oh=00_AfDowVnAcq5l5RszjilM1MeDtn1-pj0IPO1aa-C_UV3pPA&oe=66306D09" alt="" class="img-fluid">
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="items_shape"></div>
+    <div class="story_about">
+        <div class="container">            
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-7 col-lg-7">
+                    <div class="story_banner">
+                        <img src="images/banner/about_us.png" alt="" class="img-fluid">
+                     </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-5 col-lg-5">
+                    <div class="about_story_title">
+                        <h2>The Srory Of Our Eduwais.</h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum del Education atque corrupti.</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End about_top_wrapper -->
+
+
+
+<section class="events-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="event_title_wrapper">  
+                    <div class="sub_title">
+                        <h2>Our college program</h2>
+                        <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra. Pede phasellus eget. Etiam maecenas vel vici quis dictum rutrum nec nisi et.</p>  
+                    </div><!-- ends: .section-header -->
+                    <div class="envent_all_view">
+                        <a href="#" title="">View All</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 events_full_box">
+                <div class="events_single">
+                    <div class="event_banner">
+                        <a href="#"><img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/435484129_831412839014192_4131025178965989748_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFTaN6E7xoP5GmtZbzg422K6RzYlvDlTprpHNiW8OVOmvBkWvlRGRr1ZAdiwjBQKMSJ8FVaFUXzMI-78IRkvJxT&_nc_ohc=BI94jTBx4KUAb5SDvsc&_nc_ht=scontent.fdac99-1.fna&oh=00_AfBRfdmP51hZPgadK3xaUktAo07-UplXpkst_U6mNl5AVg&oe=662F16C1" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="event_info">
+                        <h3><a href="#" title="">ঈদের পরে প্রথম কর্মদিবসে ম্যানগ্রোভ পরিবার<br> Teacher </a></h3>
+                        <div class="events_time">
+                            <span class="time"><i class="flaticon-clock-circular-outline"></i>8.00 Am - 5.00 Pm</span>
+                            <span><i class="fas fa-map-marker-alt"></i>Hall - A | Broklyn Audiitorium</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet mollis dapibus arcur donec viverra to phasellus<br> eget. Etiam maecenas vel vici quis dictum rutrum nec nisi et. Ac pena<br> tibus aenean laoreet.</p>
+                        <div class="event_dete">
+                            <span class="date">15</span>
+                            <span>april</span>
+                            
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-sm-12 events_full_box">
+                <div class="events_single events_single_left">
+                    <div class="event_info">
+                        <h3><a href="#" title="">Open discussion<br>Teacher And Student </a></h3>
+                        <div class="events_time">
+                            <span class="time"><i class="flaticon-clock-circular-outline"></i>8.00 Am - 5.00 Pm</span>
+                            <span><i class="fas fa-map-marker-alt"></i>Hall - A | Broklyn Audiitorium</span>
+                        </div>
+                         <p>Open discussion between college management and students(Textile),<br> where students can share their experience and expectations and raise issue that need to be resolved.</p>
+                    </div>
+                    <div class="event_banner">
+                        <a href="#"><img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/425466378_785859340236209_6470905715856353299_n.jpg?stp=dst-jpg_s600x600&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF02NKYV01TMouNmpOSEuEmJLqvRGzx15Qkuq9EbPHXlEdREDSDPD2kW6FGfY0E-2UoRGDIDQbiLCBPGm_OSuEY&_nc_ohc=EIOLRSOft6AQ7kNvgFKi5KD&_nc_ht=scontent.fdac99-1.fna&oh=00_AfA-btv5AfzSsbq2Aoa25J08HNRY8vaYM-QxH9V1XtfV2A&oe=662F2DA0" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="event_dete">
+                        <span class="date">5</span>
+                        <span>Feb</span>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-sm-12 events_full_box">
+                <div class="events_single">
+                    <div class="event_banner">
+                        <a href="#"><img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/423715774_781584587330351_753619260609259561_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFLOTi7fuRkDwPtGyhqi2jTuE3mp885mRy4TeanzzmZHKbVXzzf2awBC6hIQaAMpF7TctP18YAEw2hPSiSjoPmt&_nc_ohc=b00XDH5VydkQ7kNvgG4EPf8&_nc_ht=scontent.fdac14-1.fna&oh=00_AfBkVepO6c4W2gbPFdp_7UYuHN6BNtKRcoDfptCrbPFBDg&oe=662F1474" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="event_info">
+                        <h3><a href="#" title="">Pitha Utsav 2024<br> festival</a></h3>
+                        <div class="events_time">
+                            <span class="time"><i class="flaticon-clock-circular-outline"></i>8.00 Am - 5.00 Pm</span>
+                            <span><i class="fas fa-map-marker-alt"></i>Hall - A | Broklyn Audiitorium</span>
+                        </div>
+                         <p>--------------------------------------<br> ---------------------------------<br> ----------------</p>
+                        <div class="event_dete">
+                            <span class="date">29</span>
+                            <span>Jan</span>
+                        </div>
+                    </div>
+                </div>  
+            </div>            
+
+        </div>
+    </div>
+</section><!-- ./ End Events Area section -->
+
+
+
+<section class="testimonial">
+    <div class="testimonial_title">
+        <h2>Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.8943269616198!2d89.53778706844426!3d22.84339879688265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9a9068161927%3A0xac8fb86be652ad48!2sMangrove%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sbd!4v1713983982290!5m2!1sen!2sbd" width="1800" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section><!-- End Testimonial -->
+
+
+
+<section class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="sub_title">
+                    <h2>OUR DEPARTMENTS</h2>
+                    <p>To help you build your career and achieve your goals, we offer 4-year Diploma in Engineering courses in 15 technologies.</p>
+                </div><!-- ends: .section-header -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                 <div class="single_item single_item_first">
+                    <div class="blog-img">
+                        <a href="#" title=""><img src="images/blog/blog_1.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="blog_title">
+                        <span>LeaderShip Development</span>  
+                        <h3><a href="#" title="">How to Become Master In <br>CSS within qa Week.</a></h3> 
+                        <div class="post_bloger">
+                            <span>15/02/2018 - By </span> <span class="bloger_name"> James Colins</span>
+                        </div>               
+                    </div>   
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single_item single_item_center">
+                     <div class="blog-img">
+                        <a href="#" title=""><img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/382236119_702053085283502_7100880694671977725_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEIAWUX79wv3fBzC8q3XepenqqIrdZgAjqeqoit1mACOm57ZF62SxYP3A_JXVSHTaKs6OzsO7H1fOc0aAkc641K&_nc_ohc=qbC_LzIVU18Q7kNvgEnU7ut&_nc_ht=scontent.fdac14-1.fna&oh=00_AfB6a8S6oFOk6lBomK-jvhKuEZtTw1CZwQZ1WKimyeSiDA&oe=66309B69" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="blog_title">
+                        <span>LeaderShip Development</span>  
+                        <h3><a href="#" title="">Students work together to <br>solve a problem.</a></h3> 
+                        <div class="post_bloger">
+                            <span>15/02/2018 - By </span> <span class="bloger_name"> Jhon Deo</span>
+                        </div>               
+                    </div>   
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+               <div class="single_item single_item_last">
+                     <div class="blog-img">
+                        <a href="#" title=""><img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/381591063_700723438749800_4554754298561845347_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGFJ_4hRSy70N7uOyg9gZjqKA8S3aMnTyAoDxLdoydPIJVsr2V9ufph9FH0nB3TNsJ6M7CGwKlpXnmy2_XqPP6j&_nc_ohc=_HZgHejlx5UQ7kNvgGpkgSW&_nc_ht=scontent.fdac14-1.fna&oh=00_AfAweMYojeiRBXuKH3jNaS9_ixTy0VyFavZ97m2GBlmP0A&oe=66307284" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="blog_title">
+                        <span>LeaderShip Development</span>  
+                        <h3><a href="#" title="">How to Become Master In <br>CSS within qa Week.</a></h3> 
+                        <div class="post_bloger">
+                            <span>15/02/2018 - By </span> <span class="bloger_name"> Simon Stain</span>
+                        </div>               
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Blog  -->
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-3 p-0 ">
+                <div class="shape_wrapper">
+                    <img src="images/shapes/bubble_shpe_1.png" alt="" class="shape_t_1"> 
+                    <img src="images/shapes/round_shpae_1.png" alt="" class="shape_t_2">
+                </div>   
+            </div>
+            <div class="col-12 col-sm-9 col-md-9 col-lg-9 p-0 become_techer_wrapper">
+                <div class="become_a_teacher">
+                    <div class="title">
+                        <h2>Become A Instructor</h2>
+                        <p>Lorem ipsum dolor sit amet mollis felis dapibus arcu donec viverra. Pede phasellus eget. Etiam maecenas vel vici quis dictum rutrum nec nisi et.</p>  
+                    </div><!-- ends: .section-header -->
+                    <div class="get_s_btn">
+                        <a href="#" title="">Get Started Now</a>
+                    </div>
+                    <img src="images/shapes/bubble_shpe_2.png" alt="" class="shape_t_1"> 
+                </div>                                
+            </div>
+        </div>
+        <div class="footer_top">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer_single_col footer_intro">
+                        <img src="images/logo2.png" alt="" class="f_logo">
+                        <p>Ante amet vitae vulputate odio nulla vel pretium pulvinar aenean. Rhoncus eget adipiscing etiam arcu. Ultricies justo ipsum nec amet.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="footer_single_col">
+                        <h3>Useful Links</h3>
+                        <ul class="location_info quick_inf0">
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="https://youtu.be/z8ZBuRFIlns?si=wXE6IYWgK1E2hj75">Blog</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100077640846052">Developers</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100077640846052">Contact</a></li>
+                        </ul>                         
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="footer_single_col information">
+                        <h3>information</h3>
+                        <ul class="quick_inf0">
+                            <li><a href="https://fb.watch/rGr1txd41A/">Campus Tour</a></li>
+                            <li><a href="https://fb.watch/rGqUpNEsnF/">Student Life</a></li>
+                            <li><a href="https://www.facebook.com/mangrove.edu.bd/posts/pfbid0xQdnpWeLF1RPe3X1tD2i157B7Hhn4kxjXZQfteQpDdwwwRWc6XUnSzJekUQyN2dTl">Skill Competition</a></li>
+                            <li><a href="https://fb.watch/rGro2fstDi/">Admission</a></li>
+                            <li><a href="https://fb.watch/rGr2-_Q-27/">Hostel Life</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer_single_col contact">
+                        <h3>Contact Us</h3>
+                        <p>Fell free to get in touch us via Phone or send us a message.</p>
+                        <div class="contact_info">
+                            <span>+000 124 325</span> 
+                            <span class="email">info@yourdomain.com</span>
+                        </div>
+                        <ul class="social_items d-flex list-unstyled">
+                            <li><a href="https://www.facebook.com/mangrove.edu.bd"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter twitt-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in link-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram ins-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="round_shape">
+        <span class="shape_1"></span> 
+        <span class="shape_2"></span> 
+        <span class="shape_3"></span> 
+        <span class="shape_4"></span> 
+        <span class="shape_5"></span> 
+        <span class="shape_6"></span>
+    </div>
+    <img src="" alt="" class="shapes1_footer">
+</footer><!-- End Footer -->
+
+<section id="scroll-top" class="scroll-top">
+    <h2 class="disabled">Scroll to top</h2>
+    <div class="to-top pos-rtive">
+        <a href="#"><i class = "flaticon-right-arrow"></i></a>
+    </div>
+</section>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Revolution Slider -->
+    <script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script> 
+    <script src="js/jquery.magnific-popup.min.js"></script>     
+    <script src="js/owl.carousel.min.js"></script>   
+    <script src="js/slick.min.js"></script>   
+    <script src="js/jquery.meanmenu.min.js"></script>  
+    <!-- Counter Script -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/wow.min.js"></script> 
+    <!-- Revolution Extensions -->
+    <script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
+    <script src="js/assets/revolution/revolution.js"></script>
+    <script src="js/custom.js"></script> 
+    <script src="js/script.js"></script>
+
+
+ 
+</body>
+
+
+</html>
