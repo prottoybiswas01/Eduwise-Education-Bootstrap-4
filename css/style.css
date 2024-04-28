@@ -1,74 +1,3 @@
-/*
-* ----------------------------------------------------------------------------------------
-Author       : EcologyTheme
-Author  Uri  : www.ecologytheme
-Template Name: Eduwise - Education Template
-Version      : 1.0                                          
-* ----------------------------------------------------------------------------------------
-*/
-/*====================================
-===[ Style Map ]===
-
-Default Css
-Preloader
-Search Style
-Scroll To Top
-Pagination Style
-
-
-01 Index Style
-====================
-Index nav Style
-Popular Highlight Style
-Index Courses Area Style
-Index About Style
-Index Up Comming Events
-Index Testimonial
-Our Blog
-Our Sponsor
-Index Footer
-
-Index Two Header
-==========================
-Features Possibilities
-Learn Step
-Index Two Popular Courses
-Register Area
-Our Instructiors
-Index Two Testimonial
-Index Two Blog
-Team Group
-Footer Two
-
-Index Three Header
-==========================
-Cources Features
-Think About Us
-Online Videos
-Testimonial Three
-Our Team Membar
-Pricieng Style
-Download App
-Footer Three
-
-Header Inner Pages
-===========================
-Blog Signle Style
-Blog Post Style
-widget Blog and Post Page
-Contact Info Wrapper
-Google Map
-About Unlimited Possibilities
-About Our Instructors
-Count Student
-Faq About
-Become A Instrauctor
-Teachers Profiles
-Courses Pages
-Related Courses Wrapper
-Event Pages		
-======================================*/
-/* Variables */
 * {
   margin: 0;
   padding: 0; }
@@ -1292,9 +1221,9 @@ header {
     height: 550px;
     width: 550px; }
     .about_top_wrapper .story_about .story_banner img {
-      height: 100%;
-      width: auto;
-      border-radius: 50%;
+      height: 90%;
+      width: 90%;
+      border-radius: 70%;
       border: 10px solid #ffffff; }
   .about_top_wrapper .story_about .about_story_title {
     padding-top: 250px; }
@@ -2742,7 +2671,7 @@ footer {
           color: #ffffff;
           border-color: #092ace; }
 .header_3 .intro_wrapper {
-  background: url("../images/banner/banner_3.png") no-repeat center center;
+  background: url("https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359525302_660136806141797_8942076103249542391_n.png?stp=dst-png_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEbxSBHmImNfBoYC1K1lQ2TfBjnd1w11P18GOd3XDXU_bhs-9urKpjCGv-W9iLQRumKYug9ukj2Ws-nJZouDlxd&_nc_ohc=DY048OqpbSUQ7kNvgFkP7Dl&_nc_ht=scontent.fdac14-1.fna&oh=00_AfCLDPU6myXOrvA3Ky8D8Z0t8dW9FpzO1_0aRD41vlZCcQ&oe=6631CF31") no-repeat center center;
   min-height: 990px;
   background-size: cover;
   position: relative;
@@ -3536,7 +3465,7 @@ footer {
     width: 100%; }
 
 .header_inner .intro_wrapper {
-  background: url("../images/banner/banner_3.png") no-repeat center center;
+  background: url("https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359525302_660136806141797_8942076103249542391_n.png?stp=dst-png_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEbxSBHmImNfBoYC1K1lQ2TfBjnd1w11P18GOd3XDXU_bhs-9urKpjCGv-W9iLQRumKYug9ukj2Ws-nJZouDlxd&_nc_ohc=DY048OqpbSUQ7kNvgFkP7Dl&_nc_ht=scontent.fdac14-1.fna&oh=00_AfCLDPU6myXOrvA3Ky8D8Z0t8dW9FpzO1_0aRD41vlZCcQ&oe=6631CF31") no-repeat center center;
   min-height: 300px;
   background-size: cover;
   position: relative;
@@ -3589,7 +3518,7 @@ footer {
 
 /*=======[ Blog Signle ]========*/
 .blog_page .intro_wrapper {
-  background: url("../images/banner/inner_banner_2.jpg") no-repeat center center !important; }
+  background: url("https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359525302_660136806141797_8942076103249542391_n.png?stp=dst-png_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEbxSBHmImNfBoYC1K1lQ2TfBjnd1w11P18GOd3XDXU_bhs-9urKpjCGv-W9iLQRumKYug9ukj2Ws-nJZouDlxd&_nc_ohc=DY048OqpbSUQ7kNvgFkP7Dl&_nc_ht=scontent.fdac14-1.fna&oh=00_AfCLDPU6myXOrvA3Ky8D8Z0t8dW9FpzO1_0aRD41vlZCcQ&oe=6631CF31") no-repeat center center !important; }
 
 .blog_wrapper {
   padding: 130px 0;
@@ -4353,7 +4282,7 @@ footer {
               left: -30px; }
 
 .contact_page .intro_wrapper {
-  background: url("../images/banner/inner_banner_3.jpg") no-repeat center center !important; }
+  background: url("https://mangrove.edu.bd/wp-content/uploads/slider/cache/2fee3210e52c820332688342e882c152/271774158_4697237040311696_2086593879736437096_n.jpg") no-repeat center center !important; }
 
 .contact_info_wrapper {
   padding: 120px 0; }
@@ -4409,7 +4338,7 @@ footer {
         bottom: -65px;
         right: 0;
         z-index: -1;
-        opacity: 0.3; }
+        opacity: 0.9; }
   .contact_info_wrapper .contact_form_wrapper .leave_comment .form-group {
     margin-bottom: 20px;
     padding: 0 0 0 20px; }
@@ -4688,7 +4617,7 @@ footer {
     color: #6a7a83 !important; }
 
 .become_a_teacher .intro_wrapper {
-  background: url("../images/banner/inner_banner_1.jpg") no-repeat center center !important; }
+  background: url("https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359525302_660136806141797_8942076103249542391_n.png?stp=dst-png_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEbxSBHmImNfBoYC1K1lQ2TfBjnd1w11P18GOd3XDXU_bhs-9urKpjCGv-W9iLQRumKYug9ukj2Ws-nJZouDlxd&_nc_ohc=DY048OqpbSUQ7kNvgFkP7Dl&_nc_ht=scontent.fdac14-1.fna&oh=00_AfCLDPU6myXOrvA3Ky8D8Z0t8dW9FpzO1_0aRD41vlZCcQ&oe=6631CF31") no-repeat center center !important; }
 
 .become_a_instructor {
   padding: 130px 0; }
@@ -5022,7 +4951,7 @@ footer {
       padding: 15px 0 0; }
 
 .courses_page .intro_wrapper {
-  background: url("../images/banner/inner_banner_4.jpg") no-repeat center center !important; }
+  background: url("https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359525302_660136806141797_8942076103249542391_n.png?stp=dst-png_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEbxSBHmImNfBoYC1K1lQ2TfBjnd1w11P18GOd3XDXU_bhs-9urKpjCGv-W9iLQRumKYug9ukj2Ws-nJZouDlxd&_nc_ohc=DY048OqpbSUQ7kNvgFkP7Dl&_nc_ht=scontent.fdac14-1.fna&oh=00_AfCLDPU6myXOrvA3Ky8D8Z0t8dW9FpzO1_0aRD41vlZCcQ&oe=6631CF31") no-repeat center center !important; }
 .courses_page .popular_courses {
   padding: 100px 0 100px; }
 
@@ -5659,7 +5588,7 @@ footer {
           color: #ff5a2c; }
 
 .event_page .intro_wrapper {
-  background: url("../images/banner/inner_banner_5.jpg") no-repeat center center !important; }
+  background: url("https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359525302_660136806141797_8942076103249542391_n.png?stp=dst-png_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEbxSBHmImNfBoYC1K1lQ2TfBjnd1w11P18GOd3XDXU_bhs-9urKpjCGv-W9iLQRumKYug9ukj2Ws-nJZouDlxd&_nc_ohc=DY048OqpbSUQ7kNvgFkP7Dl&_nc_ht=scontent.fdac14-1.fna&oh=00_AfCLDPU6myXOrvA3Ky8D8Z0t8dW9FpzO1_0aRD41vlZCcQ&oe=6631CF31") no-repeat center center !important; }
 
 .event_details_wrapper {
   padding: 130px 0 100px; }
